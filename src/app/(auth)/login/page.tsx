@@ -6,9 +6,6 @@ import { Button, Card, CardHeader, CardTitle, CardContent, Input } from "@/compo
 import { useAuth } from "@/lib/auth/hooks";
 import { LogIn, Mail, Lock, ArrowRight } from "lucide-react";
 
-// Force dynamic rendering - auth pages need browser environment
-export const dynamic = "force-dynamic";
-
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

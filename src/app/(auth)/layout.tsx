@@ -1,3 +1,6 @@
+// Auth pages require browser environment (Supabase client)
+export const dynamic = "force-dynamic";
+
 export default function AuthLayout({
   children,
 }: {

@@ -7,9 +7,6 @@ import { useAuth } from "@/lib/auth/hooks";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import { UserPlus, Mail, Lock, User, Building2, ArrowRight } from "lucide-react";
 
-// Force dynamic rendering - auth pages need browser environment
-export const dynamic = "force-dynamic";
-
 export default function SignupPage() {
   const [step, setStep] = useState<"account" | "organization">("account");
   const [email, setEmail] = useState("");
