@@ -1,0 +1,37 @@
+{
+  "id": "notes",
+  "name": "Notes",
+  "description": "Simple note-taking plugin with folders, tags, and full-text search",
+  "version": "1.0.0",
+  "author": "NIXITO Core Team",
+  "permissions": [
+    "notes:read",
+    "notes:write",
+    "notes:delete"
+  ],
+  "dependencies": [],
+  "nav": [
+    {
+      "label": "Notes",
+      "href": "/notes",
+      "icon": "FileText",
+      "order": 10
+    }
+  ],
+  "schema": "plugin_notes",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enableMarkdown": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable markdown support in notes"
+      },
+      "maxNotesPerFolder": {
+        "type": "number",
+        "default": 100,
+        "description": "Maximum notes per folder"
+      }
+    }
+  }
+}
